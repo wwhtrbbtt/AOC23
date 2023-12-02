@@ -7,7 +7,6 @@ module.exports = class Solver extends require("../base") {
     let sum = 0;
     this.data.split("\n").forEach((row) => {
       const matches = row.match(/[0-9]/g);
-      if (!matches) return;
       sum += parseInt(matches.at(0) + matches.at(-1));
     });
     this.emit("resultA", sum);
