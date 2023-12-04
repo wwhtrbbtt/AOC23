@@ -26,6 +26,9 @@ const main = async (day) => {
   fs.writeFileSync(`./src/data/${day}.txt`, data);
   fs.writeFileSync(`./src/solutions/${day}.js`, BASE_CODE);
   console.log(`Done! Generated code for day ${day}`);
+  console.log(
+    `Now start writing code: https://adventofcode.com/2023/day/${day}`
+  );
 };
 
 (async () => {
